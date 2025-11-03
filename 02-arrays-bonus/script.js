@@ -22,6 +22,8 @@ const longNames = [];
 
 
 
+
+
 // Versione con if in cui sono note le stringhe all'interno dell'array
 /*
 if ('Nathan'.length >= 5) {
@@ -41,6 +43,7 @@ if ('Nathan'.length >= 5) {
 } */
 
 // 3. Rimuovi 'Ed' dall'array teachers
+// Anche questa è perfezionabile, non è sempre scontato che io sappia la posizione esatta della stringa 'Ed'
 teachers.splice(5, 1);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
