@@ -15,9 +15,15 @@ const reversedTeachers = teachers.reverse();
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
 
-// Fixare utilizzando for per fare un controllo tramite indice e poi usare if
+// Fixare utilizzando for per fare un controllo tramite index e poi usare if
 const longNames = [];
 
+// Versione con for in cui non conosco le stringhe all'interno dell'array e lavoro tramite indice
+
+
+
+// Versione con if in cui sono note le stringhe all'interno dell'array
+/*
 if ('Nathan'.length >= 5) {
   longNames.push('Nathan');
 } if ('Ed'.length >= 5) {
@@ -32,7 +38,7 @@ if ('Nathan'.length >= 5) {
   longNames.push('Lewis');
 } if ('Luca'.length >= 5) {
   longNames.push('Luca');
-}
+} */
 
 // 3. Rimuovi 'Ed' dall'array teachers
 teachers.splice(5, 1);
