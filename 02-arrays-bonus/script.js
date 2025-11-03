@@ -17,8 +17,6 @@ const reversedTeachers = teachers.reverse();
 
 const longNames = [];
 
-// Fixare utilizzando for per fare un controllo tramite index e poi usare if
-
 // Versione con for in cui non conosco le stringhe all'interno dell'array e lavoro tramite indice
 for (let i = 0; i < teachers.length; i++) {
 
