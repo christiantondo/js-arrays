@@ -21,11 +21,11 @@ const longNames = [];
 
 // Versione con for in cui non conosco le stringhe all'interno dell'array e lavoro tramite indice
 for (let i = 0; i < teachers.length; i++) {
-  console.log(teachers[i]);
+
   if (teachers[i].length >= 5) {
     longNames.push(teachers[i]);
   }
-} 
+}
 
 // Versione con if in cui sono note le stringhe all'interno dell'array
 /*
@@ -51,8 +51,17 @@ teachers.splice(5, 1);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = teachers.includes("Fabio");
 
+let isFabioPresent = null;
+
+if (teachers.indexOf("Fabio") !== -1) {
+  isFabioPresent = true;
+} else {
+  isFabioPresent = false;
+}
+
+//Versione con .includes
+//const isFabioPresent = teachers.includes("Fabio");
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa separata da virgole e salvala nella variabile teachersString
 const teachersString = null;
