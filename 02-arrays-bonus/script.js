@@ -45,7 +45,16 @@ if ('Nathan'.length >= 5) {
 
 // 3. Rimuovi 'Ed' dall'array teachers
 // Anche questa è perfezionabile, non è sempre scontato che io sappia la posizione esatta della stringa 'Ed'
-teachers.splice(5, 1);
+
+// Versione in cui la posizione di Ed è nota
+//teachers.splice(5, 1);
+
+// Versione più efficiente con controllo all'interno dell'array
+const indiceDiEd = teachers.indexOf("Ed");
+if (indiceDiEd !== -1) {
+  teachers.splice(indiceDiEd, 1);
+}
+
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
