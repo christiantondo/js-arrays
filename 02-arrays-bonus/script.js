@@ -50,13 +50,19 @@ teachers.splice(5, 1);
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 
+/* Versione precedente più lunga modificante la variabile da const a let
+
 let isFabioPresent = null;
 
 if (teachers.indexOf("Fabio") !== -1) {
   isFabioPresent = true;
 } else {
   isFabioPresent = false;
-}
+} */
+
+// Versione più corretta e compatta
+const isFabioPresent = teachers.indexOf("Fabio") !== -1;
+
 
 //Versione con .includes
 //const isFabioPresent = teachers.includes("Fabio");
