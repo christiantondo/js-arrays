@@ -63,7 +63,6 @@ if (teachers.indexOf("Fabio") !== -1) {
 // Versione più corretta e compatta
 const isFabioPresent = teachers.indexOf("Fabio") !== -1;
 
-
 //Versione con .includes
 //const isFabioPresent = teachers.includes("Fabio");
 
